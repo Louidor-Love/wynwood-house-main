@@ -2,8 +2,8 @@
 
 # Django
 from django.db import models
-from django.contrib.postgres.fields import ArrayField
-import uuid
+from django.contrib.postgres.fields import ArrayField #permite almacenar un array de elementos en una sola columna de la base de datos
+import uuid # para generar identificadores únicos universales
 import datetime
 
 

@@ -1,11 +1,10 @@
-from django.shortcuts import render
-from django.shortcuts import render
-from typing import Any
-from django.views.generic import ListView
+from django.shortcuts import render #Facilita la creación de respuestas HTTP con datos renderizados en plantillas HTML
+from typing import Any # indica que una variable o un valor puede ser de cualquier tipo.
+from django.views.generic import ListView #una vista genérica de Django que muestra una lista de objetos
 
 from .models import*
 
-
+#vistas basadas en clases usando vista generica de Django.
 class LandingPageView(ListView):
     model = Property
     template_name = 'landing.html'
